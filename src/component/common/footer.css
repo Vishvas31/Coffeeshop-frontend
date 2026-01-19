@@ -1,0 +1,174 @@
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 60px 20px 30px;
+  /* display: flex; */
+  /* overflow-y: hidden; */
+}
+
+.footer-container {
+  width: screen-width;
+  /* padding: 0 40px;           spacing from edges */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 40px; */
+}
+
+
+/* BRAND (LEFT LOGO) */
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO SIZE BALANCE */
+.footer-logo {
+  width: 14rem;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* LEFT */
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+
+/* .para p {
+  font-size: 14px;
+  color: #aaa;
+} */
+
+/* CENTER BLOCK */
+.footer-center {
+  /* flex: 2.9; */
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-left: 2rem;
+}
+
+/* LINKS INLINE */
+.links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  padding: 0;
+  margin: 0;
+}
+.links ul li{
+  font-size: 24px;
+}
+.links ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.links ul a:hover {
+  color: #bb9863;
+  transform: translateY(-3px);
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* font-size: 28px; */
+}
+
+
+.footer-center icon{
+  display: flex;
+  flex-direction: column;
+}
+
+/* HOURS INLINE BELOW LINKS */
+.time {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  font-size: 14px;
+  color: #aaa;
+  font-size: 17px;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 8px;
+  /* gap: 10px; */
+  justify-content: space-evenly;
+}
+
+.social-icons a {
+  color: #bbb;
+  transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+.social-icons a:hover {
+  color: #c59d5f;
+  transform: translateY(-3px);
+}
+
+
+/* NEWSLETTER */
+/* .letter {
+  flex: 1;
+} */
+
+.newsletter {
+  /* display: flex; */
+  
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.newsletter input {
+  padding: 6px;
+  /* flex: 1; */
+}
+
+.newsletter button {
+  padding: 8px 16px;
+  background: #c59d5f;
+  border: none;
+  cursor: pointer;
+}
+
+/* COPYRIGHT */
+.copyright {
+  /* text-align: center; */
+  margin-top: 40px;
+  /* font-size: 13px; */
+  color: #ffffff;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .links ul,
+  .time {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .newsletter {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .paragraph {
+    justify-content: center;
+  }
+}
