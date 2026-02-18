@@ -10,4 +10,10 @@ export default defineConfig({
       },
     }),
   ],
+
+  server: {
+    allowedHosts: [
+      'devserver-main--rainbow-donut-c54fb0.netlify.app'
+    ]
+  }
 })
